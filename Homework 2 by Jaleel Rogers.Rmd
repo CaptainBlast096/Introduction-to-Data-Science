@@ -45,8 +45,8 @@ knitr::kable(classes, "pipe", col.name=c("Prefix", "Number", "Name", "Credits"),
 
 ```
 GitHub repo link: https://github.com/CaptainBlast096/Introduction-to-Data-Science.git
-Insert picture under here:
-![Insert picture of repository](C:\Users\jalee\OneDrive\Pictures\Repository1.png)
+
+![GitHub repo screenshot above](C:\Users\jalee\OneDrive\Pictures\Repository1.png)
 
 # Problem 2 (30 points)
 
@@ -78,26 +78,26 @@ In this problem you will practice some basic R operations. Include solutions to 
 (a) Create a variable called `my_name` that contains your preferred name.
 ```{r}
 
-a = "My name is"
+a <- "My name is"
 my_name <- 'Jaleel Rogers'
-result = paste( a, my_name)
+result <- paste( a, my_name)
 result
 
 ```
 (b) Create a variable called `name_length` that holds how many letters are in `my_name`.
 ```{r}
 
-b = "The number of letters in my name is"
-name_length = nchar(my_name) #problem creating variable named name_length
-result = paste(b, name_length)
+b <- "The number of letters in my name is"
+name_length <- nchar(my_name) #problem creating variable named name_length
+result <- paste(b, name_length)
 result
 
 ```
 (c) Show which value is bigger: $e^\pi$ or $\pi^e$. 
 ```{r}
 
-x = "e^pi > pi^e is"
-result = paste (x , exp(1) ^ pi > pi ^ exp(1)) 
+x <- "e^pi > pi^e is"
+result <-  paste (x , exp(1) ^ pi > pi ^ exp(1)) 
 result
 
 ```
@@ -105,10 +105,10 @@ result
 (d) Define a function called `add_tree` that takes a single argument and returns a value 3 times larger than the input.
 ```{r}
 
-add_tree = readline(prompt = "Enter in a number:")
-add_tree=as.integer(add_tree)
-Num1 = 3
-Sum = (add_tree * Num1)
+add_tree <- readline(prompt = "Enter in a number:")
+add_tree <- as.integer(add_tree)
+Num1 <- 3
+Sum <- (add_tree * Num1)
 print (Sum)
 
 ```
